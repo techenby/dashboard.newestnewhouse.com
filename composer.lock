@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a09220060fee3d6811040489da15249f",
+    "content-hash": "fdf373ef875a0a896bd9fd9721fc2ca0",
     "packages": [
         {
             "name": "brick/math",
@@ -3369,6 +3369,64 @@
                 "source": "https://github.com/solitweb/laravel-dashboard-date-time-tile/tree/1.0.3"
             },
             "time": "2022-04-05T06:34:30+00:00"
+        },
+        {
+            "name": "solitweb/laravel-dashboard-weather-forecast-tile",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/solitweb/laravel-dashboard-weather-forecast-tile.git",
+                "reference": "65acafb5a461daba49e8e68bbd6646fcb97629b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/solitweb/laravel-dashboard-weather-forecast-tile/zipball/65acafb5a461daba49e8e68bbd6646fcb97629b8",
+                "reference": "65acafb5a461daba49e8e68bbd6646fcb97629b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "spatie/laravel-dashboard": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Solitweb\\WeatherForecastTile\\WeatherForecastTileServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Solitweb\\WeatherForecastTile\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stijn Vanouplines",
+                    "email": "stijn@solitweb.be",
+                    "homepage": "https://solitweb.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A weather forecast tile for the Laravel Dashboard",
+            "homepage": "https://github.com/solitweb/laravel-dashboard-weather-forecast-tile",
+            "keywords": [
+                "laravel-dashboard-weather-forecast-tile",
+                "solitweb"
+            ],
+            "support": {
+                "issues": "https://github.com/solitweb/laravel-dashboard-weather-forecast-tile/issues",
+                "source": "https://github.com/solitweb/laravel-dashboard-weather-forecast-tile/tree/1.0.1"
+            },
+            "time": "2021-07-14T09:05:39+00:00"
         },
         {
             "name": "spatie/laravel-dashboard",

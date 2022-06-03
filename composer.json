@@ -11,6 +11,7 @@
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
         "solitweb/laravel-dashboard-date-time-tile": "^1.0",
+        "solitweb/laravel-dashboard-weather-forecast-tile": "^1.0",
         "spatie/laravel-dashboard": "^2.1",
         "spatie/laravel-dashboard-calendar-tile": "^2.1"
     },

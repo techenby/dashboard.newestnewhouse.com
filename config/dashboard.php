@@ -44,6 +44,11 @@ return [
                 'family' => 'pctjnc0hmm025r61ecdr8b77qg@group.calendar.google.com',
             ],
             'refresh_interval_in_seconds' => 60,
-        ]
+        ],
+        'weather_forecast' => [
+            'open_weather_map_key' => env('OPEN_WEATHER_MAP_KEY'),
+            'open_weather_map_city' => 'Chicago',
+            'units' => 'imperial', // 'metric' or 'imperial' (metric is default)
+        ],
     ]
 ];
