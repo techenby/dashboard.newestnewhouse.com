@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bcbd9fd668d01f199834fdcbc1170da9",
+    "content-hash": "00e4f8a43be3c44cb360327705257683",
     "packages": [
         {
             "name": "brick/math",
@@ -3506,17 +3506,11 @@
         },
         {
             "name": "spatie/laravel-dashboard-calendar-tile",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/laravel-dashboard-calendar-tile.git",
-                "reference": "bc8cd25a8bfa4748c03d0965c25b759dd4d0af1b"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-dashboard-calendar-tile/zipball/bc8cd25a8bfa4748c03d0965c25b759dd4d0af1b",
-                "reference": "bc8cd25a8bfa4748c03d0965c25b759dd4d0af1b",
-                "shasum": ""
+                "type": "path",
+                "url": "../laravel-dashboard-calendar-tile",
+                "reference": "7a5484a4ed0fe3e842856c5c54e136c192ae7816"
             },
             "require": {
                 "php": "^8.0",
@@ -3539,7 +3533,22 @@
                     "Spatie\\CalendarTile\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Spatie\\CalendarTile\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ],
+                "test-coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage"
+                ],
+                "format": [
+                    "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -3557,21 +3566,9 @@
                 "laravel-dashboard-calendar-tile",
                 "spatie"
             ],
-            "support": {
-                "issues": "https://github.com/spatie/laravel-dashboard-calendar-tile/issues",
-                "source": "https://github.com/spatie/laravel-dashboard-calendar-tile/tree/2.1.0"
-            },
-            "funding": [
-                {
-                    "url": "https://spatie.be/open-source/support-us",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-02-09T11:00:06+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "spatie/laravel-google-calendar",
@@ -8801,7 +8798,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "spatie/laravel-dashboard-calendar-tile": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

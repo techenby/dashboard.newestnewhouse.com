@@ -14,7 +14,7 @@
                             {{ $event['name'] }}
                         </div>
                         <div class="text-sm {{ $event['date']->diffInHours(now()) < 24 ? 'text-green-600' : 'text-dimmed' }}">
-                            {{ $event['date']->format('D, M jS @ g:i a') }}
+                            {{ $event['formattedDate'] }}
                         </div>
                     </div>
                 </li>

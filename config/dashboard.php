@@ -43,6 +43,8 @@ return [
                 'jess' => 'jessnewhouse24@gmail.com',
                 'family' => 'pctjnc0hmm025r61ecdr8b77qg@group.calendar.google.com',
             ],
+            'presentable_dates' => false,
+            'date_format' => 'D, M jS g:i a',
             'refresh_interval_in_seconds' => 60,
         ],
         'github' => [
