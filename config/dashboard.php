@@ -63,7 +63,7 @@ return [
         ],
         'weather_forecast' => [
             'open_weather_map_key' => env('OPEN_WEATHER_MAP_KEY'),
-            'open_weather_map_city' => 'Chicago',
+            'coordinates' => ['41.6322', '-88.2120'],
             'units' => 'imperial', // 'metric' or 'imperial' (metric is default)
         ],
     ]

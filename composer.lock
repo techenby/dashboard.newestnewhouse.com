@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "00e4f8a43be3c44cb360327705257683",
+    "content-hash": "ac51ac0b7ca723758c0658e9029ee03a",
     "packages": [
         {
             "name": "brick/math",
@@ -3372,16 +3372,16 @@
         },
         {
             "name": "solitweb/laravel-dashboard-weather-forecast-tile",
-            "version": "1.0.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/solitweb/laravel-dashboard-weather-forecast-tile.git",
-                "reference": "65acafb5a461daba49e8e68bbd6646fcb97629b8"
+                "url": "https://github.com/techenby/laravel-dashboard-weather-forecast-tile.git",
+                "reference": "7e696819cd0622bb6595abc04e9a4bd52a0e85a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solitweb/laravel-dashboard-weather-forecast-tile/zipball/65acafb5a461daba49e8e68bbd6646fcb97629b8",
-                "reference": "65acafb5a461daba49e8e68bbd6646fcb97629b8",
+                "url": "https://api.github.com/repos/techenby/laravel-dashboard-weather-forecast-tile/zipball/7e696819cd0622bb6595abc04e9a4bd52a0e85a5",
+                "reference": "7e696819cd0622bb6595abc04e9a4bd52a0e85a5",
                 "shasum": ""
             },
             "require": {
@@ -3391,6 +3391,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3404,7 +3405,22 @@
                     "Solitweb\\WeatherForecastTile\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Solitweb\\WeatherForecastTile\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ],
+                "test-coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage"
+                ],
+                "format": [
+                    "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -3423,10 +3439,9 @@
                 "solitweb"
             ],
             "support": {
-                "issues": "https://github.com/solitweb/laravel-dashboard-weather-forecast-tile/issues",
-                "source": "https://github.com/solitweb/laravel-dashboard-weather-forecast-tile/tree/1.0.1"
+                "source": "https://github.com/techenby/laravel-dashboard-weather-forecast-tile/tree/master"
             },
-            "time": "2021-07-14T09:05:39+00:00"
+            "time": "2022-06-04T17:23:27+00:00"
         },
         {
             "name": "spatie/laravel-dashboard",
@@ -3507,10 +3522,16 @@
         {
             "name": "spatie/laravel-dashboard-calendar-tile",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/techenby/laravel-dashboard-calendar-tile.git",
+                "reference": "8e3539ca52565656c7b497a6010c2d99cd9fb376"
+            },
             "dist": {
-                "type": "path",
-                "url": "../laravel-dashboard-calendar-tile",
-                "reference": "7a5484a4ed0fe3e842856c5c54e136c192ae7816"
+                "type": "zip",
+                "url": "https://api.github.com/repos/techenby/laravel-dashboard-calendar-tile/zipball/8e3539ca52565656c7b497a6010c2d99cd9fb376",
+                "reference": "8e3539ca52565656c7b497a6010c2d99cd9fb376",
+                "shasum": ""
             },
             "require": {
                 "php": "^8.0",
@@ -3520,6 +3541,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3566,9 +3588,20 @@
                 "laravel-dashboard-calendar-tile",
                 "spatie"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/techenby/laravel-dashboard-calendar-tile/tree/master"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/spatie"
+                },
+                {
+                    "type": "custom",
+                    "url": "https://spatie.be/open-source/support-us"
+                }
+            ],
+            "time": "2022-06-04T15:41:24+00:00"
         },
         {
             "name": "spatie/laravel-google-calendar",
@@ -8799,6 +8832,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "solitweb/laravel-dashboard-weather-forecast-tile": 20,
         "spatie/laravel-dashboard-calendar-tile": 20
     },
     "prefer-stable": true,
