@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Middleware\AccessToken;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'dashboard');
+Route::group(['middleware' => AccessToken::class], function () {
+    Route::view('/', 'dashboard');
+});
