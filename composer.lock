@@ -5845,16 +5845,16 @@
         },
         {
             "name": "techenby/laravel-dashboard-github-tile",
-            "version": "1.1",
+            "version": "1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/techenby/laravel-dashboard-github-tile.git",
-                "reference": "c80e7c86923ad5813b51091692d677afbbf7e387"
+                "reference": "5af617bf366f4bc43ccf7b09337f0414c82522a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/techenby/laravel-dashboard-github-tile/zipball/c80e7c86923ad5813b51091692d677afbbf7e387",
-                "reference": "c80e7c86923ad5813b51091692d677afbbf7e387",
+                "url": "https://api.github.com/repos/techenby/laravel-dashboard-github-tile/zipball/5af617bf366f4bc43ccf7b09337f0414c82522a2",
+                "reference": "5af617bf366f4bc43ccf7b09337f0414c82522a2",
                 "shasum": ""
             },
             "require": {
@@ -5898,9 +5898,9 @@
             ],
             "support": {
                 "issues": "https://github.com/techenby/laravel-dashboard-github-tile/issues",
-                "source": "https://github.com/techenby/laravel-dashboard-github-tile/tree/1.1"
+                "source": "https://github.com/techenby/laravel-dashboard-github-tile/tree/1.2"
             },
-            "time": "2022-06-04T20:27:15+00:00"
+            "time": "2022-06-04T20:37:22+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
