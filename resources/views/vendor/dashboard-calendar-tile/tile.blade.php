@@ -1,5 +1,5 @@
 <x-dashboard-tile :position="$position" :refresh-interval="$refreshIntervalInSeconds">
-    <div class="{{ isset($title) ? 'space-y-8' : '' }} h-full">
+    <div class="{{ isset($title) ? 'space-y-2' : '' }} h-full">
         @isset($title)
             <h1 class="uppercase font-bold">
                 {{ $title }}
@@ -10,9 +10,11 @@
             @foreach($events as $event)
                 <li class="py-1">
                     <div class="my-2">
-                        <div class="{{ $event['withinWeek'] ? 'font-medium' : '' }}">{{ $event['name'] }}</div>
-                        <div class="text-sm text-dimmed">
-                            {{ $event['date']->format('m/d/y h:i a') }}
+                        <div class="{{ $event['withinWeek'] ? 'font-semibold' : '' }}">
+                            {{ $event['name'] }}
+                        </div>
+                        <div class="text-sm {{ $event['date']->diffInHours(now()) < 24 ? 'text-green-600' : 'text-dimmed' }}">
+                            {{ $event['date']->format('D, M jS @ g:i a') }}
                         </div>
                     </div>
                 </li>
