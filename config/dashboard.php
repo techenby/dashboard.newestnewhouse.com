@@ -45,6 +45,20 @@ return [
             ],
             'refresh_interval_in_seconds' => 60,
         ],
+        'github' => [
+            'repos' => [
+                'techenby/octoqueue',
+                'techenby/octoprint-sdk',
+                'techenby/radnight',
+                'techenby/iconi',
+                'techenby/recipe-manager',
+                'techenby/stitch',
+                'sgdinstitute/enterprise',
+                'sgdinstitute/apollo',
+            ],
+            'key' => env('GITHUB_KEY'),
+            'username' => 'techenby',
+        ],
         'weather_forecast' => [
             'open_weather_map_key' => env('OPEN_WEATHER_MAP_KEY'),
             'open_weather_map_city' => 'Chicago',

@@ -12,7 +12,7 @@
             {{ Carbon\Carbon::now($timezone)->isoFormat('LT') }}
         </div>
         <div id="{{ $date }}" class="text-sm uppercase text-dimmed">
-            {{ Carbon\Carbon::now($timezone)->isoFormat('LL') }}
+            {{ Carbon\Carbon::now($timezone)->isoFormat('dddd LL') }}
         </div>
     </div>
 </x-dashboard-tile>
@@ -27,7 +27,7 @@
 @push('scripts')
     <script defer>
         setInterval(() => {
-            document.getElementById('{{ $date }}').innerHTML = moment().locale('{{ config('app.locale') }}').tz('{{ $timezone }}').format('LL')
+            document.getElementById('{{ $date }}').innerHTML = moment().locale('{{ config('app.locale') }}').tz('{{ $timezone }}').format('dddd LL')
             document.getElementById('{{ $time }}').innerHTML = moment().locale('{{ config('app.locale') }}').tz('{{ $timezone }}').format('LT')
         }, 1000)
     </script>
