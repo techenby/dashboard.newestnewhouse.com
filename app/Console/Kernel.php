@@ -11,7 +11,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command(\Spatie\CalendarTile\FetchCalendarEventsCommand::class)->everyMinute();
         $schedule->command(\Solitweb\WeatherForecastTile\FetchDataFromApiCommand::class)->everyMinute();
-        $schedule->command(\Techenby\GithubTile\FetchDataFromApiCommand::class)->daily();
+        $schedule->command(\Techenby\GithubTile\FetchDataFromApiCommand::class)->hourly();
     }
 
     protected function commands()
