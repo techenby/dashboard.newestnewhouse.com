@@ -1,8 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "techenby/newestnewhouse-dashboard",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "A version of Spatie's Laravel Dashboard for our family",
+    "keywords": ["framework", "laravel", "spatie", "laravel-dashboard"],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
