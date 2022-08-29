@@ -1,5 +1,5 @@
 <x-dashboard-tile :position="$position" :refresh-interval="$refreshIntervalInSeconds">
-    <div class="{{ isset($title) ? 'space-y-2' : '' }} h-full overflow-scroll">
+    <div class="{{ isset($title) ? 'space-y-2' : '' }} h-full calendar-tile overflow-scroll">
         @isset($title)
             <h1 class="uppercase font-bold">
                 {{ $title }}

@@ -9,7 +9,7 @@ return [
      * - device: follow the OS preference for determining light or dark mode
      * - auto: use light mode when the sun is up, dark mode when the sun is down
      */
-    'theme' => 'auto',
+    'theme' => 'dark',
 
     /*
      * When the dashboard uses the `auto` theme, these coordinates will be used
@@ -24,14 +24,14 @@ return [
      * These scripts will be loaded when the dashboard is displayed.
      */
     'scripts' => [
-        'alpinejs' => 'https://cdn.jsdelivr.net/gh/alpinejs/alpine@v3.x.x/dist/alpine.min.js',
+        'alpinejs' => 'https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js',
     ],
 
     /*
      * These stylesheets will be loaded when the dashboard is displayed.
      */
     'stylesheets' => [
-        'inter' => 'https://rsms.me/inter/inter.css'
+        'inter' => 'https://rsms.me/inter/inter.css',
     ],
 
     'tiles' => [
