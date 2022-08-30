@@ -20,7 +20,7 @@
             }
             for($i=1; $i<=$daysInMonth; $i++) {
                 if($i == $numDay) {
-                    echo('<td id="today" class="text-center bg-blue-400 rounded-md">');
+                    echo('<td id="today" class="text-center bg-accent rounded-md text-invers">');
                 } else {
                     echo("<td class='text-center'>");
                 }
