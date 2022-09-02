@@ -1,8 +1,8 @@
 <x-dashboard-tile :position="$position" refresh-interval="21600">
     <div class="grid grid-cols-7 gap-1 w-full">
-        <button wire:click="prevMonth" class="text-lg text-center">&laquo;</button>
-        <div class="text-lg col-span-5 text-center">{{ $month }}</div>
-        <button wire:click="nextMonth" class="text-lg text-center">&raquo;</button>
+        <button wire:click="prevMonth" class="p-1 text-2xl text-center">&laquo;</button>
+        <div class="text-2xl p-1 col-span-5 text-center">{{ $month }}</div>
+        <button wire:click="nextMonth" class="p-1 text-2xl text-center">&raquo;</button>
 
         <div abbr="Sunday" scope="col" title="Sunday" class="text-center text-dimmed">S</div>
         <div abbr="Monday" scope="col" title="Monday" class="text-center text-dimmed">M</div>
