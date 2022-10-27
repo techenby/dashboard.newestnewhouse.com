@@ -1,4 +1,4 @@
-<x-dashboard-tile :position="$position" refresh-interval="21600">
+<x-dashboard-tile :position="$position" refresh-interval="3600">
     <div class="grid grid-cols-7 gap-1 w-full">
         <button wire:click="prevMonth" class="p-1 text-2xl text-center">&laquo;</button>
         <div class="text-2xl p-1 col-span-5 text-center">{{ $month }}</div>

@@ -7,12 +7,6 @@ use Livewire\Component;
 class Calendar extends Component
 {
     public $position;
-    public $carbon;
-
-    public function mount()
-    {
-        $this->carbon = now();
-    }
 
     public function render()
     {
@@ -22,6 +16,11 @@ class Calendar extends Component
             'month' => $this->carbon->englishMonth,
             'todaysDate' => $this->carbon->day,
         ]);
+    }
+
+    public function getCarbonProperty()
+    {
+        return now();
     }
 
     public function nextMonth()
