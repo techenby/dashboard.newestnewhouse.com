@@ -11,4 +11,6 @@
     <livewire:github-tile position="c2" title="GitHub"/>
     <livewire:calendar-tile position="d1" :calendar-id="config('dashboard.tiles.calendar.ids.jess')" title="Jess"/>
     <livewire:calendar-tile position="e1" :calendar-id="config('dashboard.tiles.calendar.ids.family')" title="Family"/>
+
+    <livewire:rollo position="d2:e2" />
 </x-dashboard>

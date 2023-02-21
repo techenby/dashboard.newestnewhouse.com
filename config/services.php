@@ -31,4 +31,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'rollo' => [
+        'key' => env('ROLLO_KEY'),
+        'url' => env('ROLLO_URL', 'http://rollo.test'),
+    ]
+
 ];
