@@ -40,7 +40,7 @@ return [
                 'tighten' => 'andy.newhouse@tighten.co',
                 'institute' => 'andy@sgdinstitute.org',
                 'andy' => 'andymnewhouse@gmail.com',
-                'jess' => 'jessnewhouse24@gmail.com',
+                'ash' => 'jessnewhouse24@gmail.com',
                 'family' => 'pctjnc0hmm025r61ecdr8b77qg@group.calendar.google.com',
             ],
             'presentable_dates' => false,
