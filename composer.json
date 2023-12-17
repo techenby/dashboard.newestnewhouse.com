@@ -2,13 +2,18 @@
     "name": "techenby/newestnewhouse-dashboard",
     "type": "project",
     "description": "A version of Spatie's Laravel Dashboard for our family",
-    "keywords": ["framework", "laravel", "spatie", "laravel-dashboard"],
+    "keywords": [
+        "framework",
+        "laravel",
+        "spatie",
+        "laravel-dashboard"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
         "blade-ui-kit/blade-heroicons": "^2.1",
         "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^9.11",
+        "laravel/framework": "^9.19",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
         "solitweb/laravel-dashboard-date-time-tile": "^1.0",
